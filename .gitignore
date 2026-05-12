@@ -1,6 +1,15 @@
+# Keys
+.env
+*.pem
+*.key
+config.json
+secrets.yaml
+
 # Logs
 logs
 *.log
+*.tmp
+*.temp
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
