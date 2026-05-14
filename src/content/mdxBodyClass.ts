@@ -1,0 +1,3 @@
+/** Career·Works MDX 본문에 공통 적용하는 타이포그래피 유틸 클래스 */
+export const mdxBodyClass =
+  'max-w-none [&_h1]:mb-3 [&_h1]:text-2xl [&_h1]:font-semibold [&_h1]:text-heading [&_h2]:mt-0 [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-heading [&_h3]:mt-6 [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-heading [&_p]:mt-3 [&_p]:leading-relaxed [&_p]:text-muted [&_a]:text-accent [&_a]:underline-offset-4 hover:[&_a]:underline [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5 [&_ul]:text-muted [&_code]:rounded-md [&_code]:bg-navy-deep/80 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:font-mono [&_code]:text-sm [&_code]:text-accent';
