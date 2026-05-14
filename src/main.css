@@ -31,7 +31,7 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .cursor-silhouette {
+    .spotlight-overlay {
       display: none !important;
     }
   }

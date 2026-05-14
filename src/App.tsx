@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import CursorSilhouette from './components/CursorSilhouette';
+import Spotlight from './components/Spotlight';
 import Header from './Header';
 import Content from './Content';
 
@@ -34,14 +34,13 @@ function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen">
-      <CursorSilhouette />
-      <div className="relative z-10 flex min-h-screen flex-col lg:flex-row">
+    <div className="group/spotlight relative min-h-screen">
+      <Spotlight />
+      {/* 헤더 : 본문 ≈ 3 : 7 */}
+      <div className="relative z-40 mx-auto flex min-h-screen w-full max-w-screen-xl flex-col px-6 py-12 md:px-12 md:py-16 lg:flex-row lg:justify-between lg:gap-16 lg:py-0">
         <Header activePage={activePage} onNavigate={onNavigate} />
-        <main className="flex-1 px-6 py-12 lg:px-14 lg:py-20">
-          <div className="mx-auto max-w-2xl">
-            <Content page={activePage} />
-          </div>
+        <main className="min-w-0 w-full pt-12 lg:w-[70%] lg:shrink-0 lg:py-24">
+          <Content page={activePage} />
         </main>
       </div>
     </div>
