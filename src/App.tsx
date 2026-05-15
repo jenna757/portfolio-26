@@ -37,7 +37,7 @@ function App() {
     <div className="group/spotlight relative min-h-screen">
       <Spotlight />
       {/* 헤더 : 본문 ≈ 3 : 7 */}
-      <div className="relative z-40 mx-auto flex min-h-screen w-full max-w-screen-xl flex-col px-6 py-12 md:px-12 md:py-16 lg:flex-row lg:justify-between lg:gap-16 lg:py-0">
+      <div className="relative z-40 mx-auto flex min-h-screen w-full max-w-screen-2xl flex-col px-6 py-12 md:px-12 md:py-16 lg:flex-row lg:justify-between lg:gap-16 lg:py-0">
         <Header activePage={activePage} onNavigate={onNavigate} />
         <main className="min-w-0 w-full pt-12 lg:w-[70%] lg:shrink-0 lg:py-24">
           <Content page={activePage} />

@@ -43,13 +43,13 @@ export const ExperienceItem = ({
       <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
         <div className={hoverPanel} />
         <header
-          className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted sm:col-span-2"
+          className="z-10 mb-2 mt-1 text-sm font-semibold uppercase tracking-wide text-muted sm:col-span-2"
           aria-label={date}
         >
           {date}
         </header>
         <div className="z-10 sm:col-span-6">
-          <h3 className="text-base font-medium leading-snug text-heading">
+          <h3 className="text-lg font-medium leading-snug text-heading">
             {companyHref ? (
               <a
                 href={companyHref}
@@ -64,18 +64,18 @@ export const ExperienceItem = ({
             )}
           </h3>
           {subTitles?.map((line) => (
-            <div key={line} className="text-sm text-muted" aria-hidden>
+            <div key={line} className="text-base text-muted" aria-hidden>
               {line}
             </div>
           ))}
-          <p className="mt-2 text-sm leading-normal text-muted">{description}</p>
+          <p className="mt-2 text-base leading-normal text-muted">{description}</p>
           {relatedLinks && relatedLinks.length > 0 ? (
             <ul className="mt-2 flex flex-wrap" aria-label="관련 링크">
               {relatedLinks.map(({ href, label }) => (
                 <li key={href + label} className="mr-4">
                   <a
                     href={href}
-                    className="relative mt-2 inline-flex items-center text-sm font-medium text-heading/90 hover:text-accent"
+                    className="relative mt-2 inline-flex items-center text-base font-medium text-heading/90 hover:text-accent"
                     target="_blank"
                     rel="noreferrer noopener"
                   >

@@ -12,7 +12,7 @@ const Header = ({ activePage, onNavigate }: HeaderProps) => {
       <div>
         <p className="text-4xl font-bold tracking-tight text-heading sm:text-5xl">최진슬</p>
         <p className="mt-2 text-2xl font-medium tracking-tight text-heading sm:text-2xl">Web Publisher</p>
-        <p className="mt-4 max-w-xs text-base leading-normal text-muted sm:text-lg">
+        <p className="mt-4 max-w-xs text-sm leading-normal text-muted sm:text-base">
           웹을 위한 접근성과 <br />
           디테일을 중시하는 인터페이스를 만듭니다.
         </p>

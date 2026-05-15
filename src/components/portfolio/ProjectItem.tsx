@@ -44,7 +44,7 @@ export const ProjectItem = ({
           <h3 className="font-medium leading-snug text-heading">
             <a
               href={titleHref}
-              className="group/link relative inline-flex items-baseline text-base font-medium leading-tight text-heading"
+              className="group/link relative inline-flex items-baseline text-lg font-medium leading-tight text-heading"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -55,7 +55,7 @@ export const ProjectItem = ({
               </span>
             </a>
           </h3>
-          <p className="mt-2 text-sm leading-normal text-muted">{description}</p>
+          <p className="mt-2 text-base leading-normal text-muted">{description}</p>
           {technologies && technologies.length > 0 ? (
             <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
               {technologies.map((tech) => (

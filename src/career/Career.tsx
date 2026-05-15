@@ -8,7 +8,7 @@ const Career = () => {
       aria-label="경력"
     >
       <div className="sticky top-0 z-20 -mx-6 mb-4 border-b border-white/5 bg-navy/80 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only">
-        <h2 className="text-sm font-bold uppercase tracking-widest text-heading">Career</h2>
+        <h2 className="text-base font-bold uppercase tracking-widest text-heading">Career</h2>
       </div>
       <div>
         <CareerMdx />
