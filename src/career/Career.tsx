@@ -1,18 +1,17 @@
 import CareerMdx from '../content/career.mdx';
-import { mdxBodyClass } from '../content/mdxBodyClass';
 
 const Career = () => {
   return (
-    <section className="space-y-8">
-      <header>
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-muted">Career</p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-heading">경력</h1>
-      </header>
-
-      <div className="rounded-2xl border border-white/10 bg-navy-panel/40 p-6 shadow-[0_24px_80px_-32px_rgba(2,12,27,0.85)] ring-1 ring-white/5 backdrop-blur-md md:p-10">
-        <article className={mdxBodyClass}>
-          <CareerMdx />
-        </article>
+    <section
+      id="career"
+      className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+      aria-label="경력"
+    >
+      <div className="sticky top-0 z-20 -mx-6 mb-4 border-b border-white/5 bg-navy/80 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only">
+        <h2 className="text-sm font-bold uppercase tracking-widest text-heading">Career</h2>
+      </div>
+      <div>
+        <CareerMdx />
       </div>
     </section>
   );
