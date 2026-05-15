@@ -24,7 +24,7 @@ const About = () => {
           <code className="rounded-md bg-navy-deep/80 px-1.5 py-0.5 font-mono text-sm text-accent">
             src/content/works.mdx
           </code>
-          로 내용을 채울 수 있습니다.
+          {'로 내용을 채울 수 있습니다.'}
         </p>
         <p className="text-sm text-muted/90">
           이 소개 문단은 <code className="text-accent">src/about/About.tsx</code>에서 수정하면 됩니다.
