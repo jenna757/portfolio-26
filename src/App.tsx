@@ -36,12 +36,13 @@ function App() {
   return (
     <div className="group/spotlight relative min-h-screen">
       <Spotlight />
-      {/* 헤더 : 본문 ≈ 3 : 7 */}
-      <div className="relative z-40 mx-auto flex min-h-screen w-full max-w-screen-2xl flex-col px-6 py-12 md:px-12 md:py-16 lg:flex-row lg:justify-between lg:gap-16 lg:py-0">
-        <Header activePage={activePage} onNavigate={onNavigate} />
-        <main className="min-w-0 w-full pt-12 lg:w-[70%] lg:shrink-0 lg:py-24">
-          <Content page={activePage} />
-        </main>
+      <div className="relative z-40 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
+        <div className="lg:flex lg:justify-between lg:gap-4 max-w-screen-xl">
+          <Header activePage={activePage} onNavigate={onNavigate} />
+          <main className="min-w-0 pt-24 lg:w-[52%] lg:py-24">
+            <Content page={activePage} />
+          </main>
+        </div>
       </div>
     </div>
   );
