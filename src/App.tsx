@@ -99,6 +99,18 @@ function App() {
           <Header activePage={activePage} onNavigate={onNavigate} />
           <main className="min-w-0 pt-24 lg:w-[52%] lg:py-24">
             <Content />
+            <p className="mt-16 max-w-lg text-sm leading-relaxed text-muted">
+              <span className="text-heading">Figma</span>에서 대략적인 디자인 구상을 하고,{' '}
+              <span className="text-heading">Visual Studio Code</span>에서 직접 코딩을 하며
+              <br />
+              막힌 부분은 <span className="text-heading">Cursor</span>의 도움을 받아 코딩을 했습니다.
+              <br />
+              스타일은 <span className="text-heading">Tailwind(v4.0)</span>로 하였고,{' '}
+              <span className="text-heading">Vite</span>를 사용하여 빌드하고{' '}
+              <span className="text-heading">Vercel</span>로 배포했습니다.
+              <br />
+              모든 텍스트는 Interop 서체를 사용했습니다.
+            </p>
           </main>
         </div>
       </div>
