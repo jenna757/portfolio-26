@@ -1,101 +1,182 @@
 import { ProjectItem, ProjectList } from '../components/portfolio';
 
-<p className="mb-4 text-sm leading-normal text-muted">
-  아래 프로젝트는 더미 데이터입니다. 제목·설명·스택·썸네일 URL은 각 <code className="rounded bg-navy-deep/80 px-1 py-0.5 font-mono text-xs text-accent">ProjectItem</code> props로
-  바꾸면 됩니다.
-</p>
+<p className="mb-4 text-sm leading-normal text-muted">프로젝트</p>
 
 <ProjectList>
   <ProjectItem
-    title="Orbit Task — 협업 칸반 보드"
-    titleHref="https://example.com"
-    description="팀 단위 스프린트·태스크·멘션을 지원하는 웹 앱입니다. 보드 드래그 앤 드롭, 낙관적 업데이트, 실시간 댓글 스트림을 구현한 포트폴리오용 예시입니다."
-    technologies={['React', 'TypeScript', 'Zustand', 'WebSocket']}
-    imageSrc="/favicon.svg"
-    imageAlt="Orbit Task preview"
-  >
-    <div className="mt-2 flex flex-wrap gap-x-4">
-      <a
-        href="https://example.com"
-        className="inline-flex items-center text-sm font-medium text-heading/90 hover:text-accent"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        라이브 데모
-      </a>
-      <a
-        href="https://example.com"
-        className="inline-flex items-center text-sm font-medium text-heading/90 hover:text-accent"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        소스 코드
-      </a>
-    </div>
-  </ProjectItem>
-  <ProjectItem
-    title="Northwind Atlas — 지도 기반 매장 탐색"
-    titleHref="https://example.com"
-    description="지역 필터·검색·즐겨찾기가 있는 스토어 로케이터입니다. 모바일 퍼스트 레이아웃과 지도 클러스터링으로 초기 로딩 시간을 줄이는 시나리오를 가정했습니다."
-    technologies={['Next.js', 'MapLibre GL', 'Tailwind CSS']}
-    imageAlt="Northwind Atlas preview"
-  >
-    <a
-      href="https://example.com"
-      className="relative mt-2 inline-flex items-center text-sm font-medium text-heading/90 hover:text-accent"
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      스토리보드
-    </a>
-  </ProjectItem>
-  <ProjectItem
-    title="Halcyon CLI Dashboard"
-    titleHref="https://example.com"
-    description="터미널 스타일의 개발자용 대시보드 UI입니다. 키보드 내비게이션, 다크/라이트 테마, 로그 스트림 필터를 더미 콘셉트로 정리했습니다."
-    technologies={['Vite', 'React', 'xterm.js', 'Radix UI']}
-    imageAlt="Halcyon CLI preview"
+    title="PORINGRUSH — 그라비티"
+    titleHref=""
+    description="2024.07 — 2024.12 · 사전예약 및 공식 사이트 구축·유지보수. 모션·인터랙션 퍼블리싱으로 게임 소개·사전예약 콘텐츠의 사용자 집중도를 향상했습니다."
+    technologies={['Javascript', 'SCSS', 'GSAP', 'AOS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
   />
   <ProjectItem
-    title="Korok Notes — 마크다운 노트 (PWA)"
-    titleHref="https://example.com"
-    description="오프라인 우선 노트 앱입니다. IndexedDB 동기화, 충돌 해결 UI, 보내기(MD/PDF)를 가정한 설명문입니다."
-    technologies={['React', 'Workbox', 'MDX', 'Vitest']}
-    imageAlt="Korok Notes preview"
+    title="THE 라그나로크 — 그라비티"
+    titleHref=""
+    description="2024.06 — 2024.09 · 더 라그나로크 사전예약·공식 사이트 구축·유지보수. 모션·인터랙션 퍼블리싱으로 게임 소개·사전예약 콘텐츠의 집중도를 높였습니다."
+    technologies={['Javascript', 'SCSS', 'GSAP', 'AOS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
   />
   <ProjectItem
-    title="Echo Form Builder"
-    titleHref="https://example.com"
-    description="드래그로 필드를 배치하는 폼 빌더 프로토타입입니다. 스키마 JSON 보내기·조건부 필드 표시를 지원한다는 가상의 요구사항입니다."
-    technologies={['Vue 3', 'Pinia', 'VeeValidate']}
-    imageAlt="Echo Form Builder preview"
+    title="라그나로크 오리진 — 그라비티"
+    titleHref=""
+    description="도람왕국 공식 홈페이지 신규 업데이트(2024.11), 신규 직업·이벤트 소개(2024.10), 4차 클래스 수라·로얄가드 업데이트(2024.03), 4차 클래스 UPDATE 소개(2023.10) 등 모션·인터랙션 퍼블리싱. 소개·이벤트 콘텐츠의 집중도 향상."
+    technologies={['Javascript', 'SCSS', 'GSAP', 'AOS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="라그나로크 온라인 — 그라비티"
+    titleHref=""
+    description="22주년 메가 부스터(2024.08 — 09), ROS 2024 한국 대표 선발전 안내(2024.05 — 10), VIP 초청행사(2024.04 — 05), 태국 초심지전 사전예약(2024.04 — 05), 2023 겨울 프로모션(2023.12) 및 일반형 이벤트 페이지 구축. 모션·인터랙션 퍼블리싱."
+    technologies={['Javascript', 'SCSS', 'GSAP', 'AOS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="라그나로크 비긴즈 — 그라비티"
+    titleHref=""
+    description="1주년 기념 이벤트(2024.11), 전 직업 각성 8월 업데이트 안내(2024.08) 등 모션·인터랙션 퍼블리싱. 소개·이벤트 콘텐츠의 집중도 향상."
+    technologies={['Javascript', 'SCSS', 'GSAP', 'AOS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="라그나로크 제로 — 그라비티"
+    titleHref=""
+    description="요리왕 비룡 콜라보 이벤트(2024.11), 6주년 기념 페스티벌(2023.12) 및 일반형 이벤트 페이지 구축. 모션·인터랙션 퍼블리싱."
+    technologies={['Javascript', 'SCSS', 'GSAP', 'AOS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="GNJOY 사이트 운영 — 그라비티"
+    titleHref="https://www.gnjoy.com/"
+    description="2023.10 — 2024.12 · 개인정보 처리방침 및 추가 유지보수 퍼블리싱. 홈페이지의 원활한 사용 환경을 유지했습니다."
+    technologies={['Javascript', 'SCSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="GRAVITY Official Site Renewal — 그라비티"
+    titleHref=""
+    description="2023.10 — 2024.05 · GSAP을 활용한 회사 소개 홈페이지 퍼블리싱 협업. 정적 사이트를 역동적인 홈페이지로 구현했습니다."
+    technologies={['GSAP', 'Javascript', 'SCSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="2023 G-Star — 그라비티"
+    titleHref=""
+    description="2023.10 — 2023.11 · G-Star 참여 게임 소개 페이지 퍼블리싱. 메인 진입 GSAP 모션과 스크롤 AOS 텍스트 모션으로 이목 집중·가독성을 높였습니다."
+    technologies={['GSAP', 'AOS', 'Javascript', 'SCSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="라그나로크 M — 그라비티"
+    titleHref=""
+    description="2023.11 · 대규모 업데이트 소개 페이지 구축. 모션·인터랙션 퍼블리싱으로 소개·이벤트 콘텐츠의 집중도를 향상했습니다."
+    technologies={['Javascript', 'SCSS', 'GSAP', 'AOS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="한신J-라운지 사용자 구축 및 유지보수 — 한신대학교"
+    titleHref=""
+    description="2022.11 — 2023.08 · 화면 반응형 퍼블리싱, 모션 스크립트·수정 페이지 작업. 재학생·지역청년·기업 사용자별 UI와 다양한 이력서 입력 스타일의 반응형 퍼블리싱을 제공했습니다."
+    technologies={['Javascript', 'SCSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="능력개발교육원 사용자 구축 및 유지보수 — 한국기술교육대학교"
+    titleHref=""
+    description="2022.08 — 2023.08 · 반응형 퍼블리싱 및 모션 스크립트 작업. 대시보드·다양한 정보성 페이지의 반응형 퍼블리싱을 제작했습니다."
+    technologies={['Javascript', 'SCSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="시민라이프칼리지 사용자 구축 및 유지보수 — 인천인재평생교육원"
+    titleHref=""
+    description="2022.04 — 2023.08 · 반응형 퍼블리싱 및 모션 스크립트 작업. 그래프·테이블·캠퍼스별 정보성 페이지의 반응형 퍼블리싱을 제작했습니다."
+    technologies={['Javascript', 'SCSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="SystemKit Guide & DEMO Pages — 브이스퀘어"
+    titleHref=""
+    description="2022.03 — 2022.07 · SCSS 기반 Systems Guide Kit V2.2, 웹아이콘 폰트, DEMO 페이지 제작. 정형화된 페이지 작업 속도·소통 효율·통일된 클래스 활용을 개선했습니다."
+    technologies={['SCSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="아이스크림 초등 홈런 사용자 운영 — 아이스크림에듀"
+    titleHref=""
+    description="2020.10 — 2021.05 · 초등 홈런 사이트 반응형 퍼블리싱·수정. 시맨틱 태그·웹 표준 코드로 SEO를 향상하고 네이버 서치어드바이저 검사 상위 2%를 달성했습니다."
+    technologies={['Javascript', 'CSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="COBE ONE Platform — 메쎼이상"
+    titleHref=""
+    description="2018.06 — 2020.06 · 코리아베이비페어 전시 안내·이벤트 공지 사용자 페이지, 관리자 디자인·퍼블리싱·운영. 전시 정보 전달과 티켓 확인 효율을 높였습니다."
+    technologies={['Javascript', 'CSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="전시안내관리 시스템 관리자 구축 — 국립현대미술관"
+    titleHref=""
+    description="2017.10 — 2017.11 · 관리자 페이지 퍼블리싱. 전시·스탭·시스템 관리를 위한 효율적인 관리 화면을 구축했습니다."
+    technologies={['Javascript', 'CSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="LX재산관리시스템 관리자 및 GIS — 한국국토정보공사"
+    titleHref=""
+    description="2017.09 — 2017.10 · 관리자·GIS 페이지 퍼블리싱. 재산 관리 효율성과 국공유지·학교시설 등 지리 기반 현황 파악을 지원했습니다."
+    technologies={['Javascript', 'CSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="운영관리시스템 및 수목원 GIS — 국립백두대간수목원"
+    titleHref=""
+    description="2017.09 — 2017.10 · 운영관리시스템 관리자, 산림 생물 자원 관리 GIS 퍼블리싱. 간결한 UI로 운영 관리와 수목원 위치 정보 관리를 용이하게 했습니다."
+    technologies={['Javascript', 'CSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="환경방사능 실험공정관리시스템 — 한국원자력연구원"
+    titleHref=""
+    description="2017.05 — 2017.07 · LIMSERA CMS·파트너 PMS 퍼블리싱. 고객·파트너 관리 효율을 높였습니다."
+    technologies={['Javascript', 'CSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="회사 소개 홈페이지 구축 — 가온엔아이티"
+    titleHref=""
+    description="2017.03 — 2017.04 · 간결한 UI·UX의 회사 소개 반응형 퍼블리싱. 회사 특색과 정보를 효과적으로 전달했습니다."
+    technologies={['Javascript', 'CSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
+  />
+  <ProjectItem
+    title="관리자 및 티켓 구축 — 국립아시아문화전당"
+    titleHref=""
+    description="2017.01 — 2018.01 · 관리자, 다국어 티켓 스텝 페이지 반응형 퍼블리싱. 회원·티켓 관리 효율과 아랍어 UI를 구현했습니다."
+    technologies={['Javascript', 'CSS', 'HTML']}
+    imageSrc="public/favicon.svg"
+    imageAlt="해당 프로젝트 썸네일 이미지"
   />
 </ProjectList>
-
-<div className="mt-12">
-  <a
-    href="#"
-    className="group inline-flex items-center font-semibold leading-tight text-heading"
-    aria-label="전체 프로젝트 보기"
-  >
-    <span>
-      <span className="pb-px transition motion-reduce:transition-none">전체 프로젝트 </span>
-      <span className="whitespace-nowrap">
-        <span className="pb-px transition motion-reduce:transition-none">아카이브</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
-          aria-hidden
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </span>
-    </span>
-  </a>
-</div>

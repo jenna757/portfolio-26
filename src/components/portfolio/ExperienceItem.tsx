@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 import { ExternalLinkIcon } from './ExternalLinkIcon';
 
 const hoverPanel =
@@ -8,7 +10,7 @@ export type ExperienceItemProps = {
   title: string;
   company: string;
   companyHref?: string;
-  description: string;
+  description: ReactNode[];
   technologies: string[];
   relatedLinks?: { href: string; label: string }[];
   subTitles?: string[];
@@ -68,7 +70,11 @@ export const ExperienceItem = ({
               {line}
             </div>
           ))}
-          <p className="mt-2 text-sm leading-normal">{description}</p>
+          <ul className="mt-2 list-disc space-y-1 pl-4 text-sm leading-normal">
+            {description.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
           {relatedLinks && relatedLinks.length > 0 ? (
             <ul className="mt-2 flex flex-wrap" aria-label="관련 링크">
               {relatedLinks.map(({ href, label }) => (

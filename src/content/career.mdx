@@ -1,81 +1,83 @@
-import { ExperienceItem, ExperienceList } from '../components/portfolio';
+import { ExperienceDescLink, ExperienceItem, ExperienceList } from '../components/portfolio';
 
-<p className="mb-4 text-sm leading-normal text-muted">
-  제품 팀과 디자인 시스템 팀에서 접근성·일관된 UI를 기준으로 화면과 컴포넌트 라이브러리를 만들어 왔습니다. 아래는 더미 데이터입니다.
-</p>
+<p className="mb-4 text-sm leading-normal text-muted">경력기술서</p>
 
 <ExperienceList>
   <ExperienceItem
-    date="2024 — Present"
-    title="Senior Frontend Engineer, Accessibility"
-    company="Lumen Analytics"
-    companyHref="https://example.com"
-    description="실시간 대시보드와 셀프서브 BI 제품의 웹 클라이언트를 담당합니다. 디자인 토큰 기반 테마, 차트 성능(가상 스크롤·캔버스 하이브리드), WCAG 2.2 대응 리팩터링을 진행했습니다."
-    technologies={['JavaScript', 'TypeScript', 'React', 'Storybook']}
-  />
-  <ExperienceItem
-    date="2021 — 2024"
-    title="Lead Engineer"
-    company="Harbor Commerce"
-    companyHref="https://example.com"
-    description="B2B 주문·재고 관리 SaaS의 프론트엔드를 리드했습니다. 레거시 jQuery 모듈을 React로 단계적 이관하고, 공통 폼·테이블 컴포넌트를 표준화했습니다."
-    technologies={[
-      'JavaScript',
-      'TypeScript',
-      'HTML & SCSS',
-      'React',
-      'Next.js',
-      'React Native',
-      'WordPress',
-      'Contentful',
-      'Node.js',
-      'PHP',
+    date="2025.05 — Present"
+    company="한진정보통신"
+    title="대한항공고객그룹 · 대리/팀원"
+    description={[
+      '대한항공 내부 디자인 시스템 컴포넌트 퍼블리싱 구축 및 운영',
+      <>
+        <ExperienceDescLink href="https://www.koreanair.com/">대한항공 홈페이지</ExperienceDescLink> 디자인 시스템
+        컴포넌트(WDS - Wing Design System) 퍼블리싱 운영
+      </>,
+      '대고객 정보성이메일 템플릿 HTML (PNS — PAX Notification Services) 구축 및 운영',
     ]}
-    subTitles={['Senior Engineer', 'Engineer']}
+    technologies={['Module.scss', 'CursorAI', '.html.tsx']}
   />
   <ExperienceItem
-    date="2019 — 2021"
-    title="Frontend Developer"
-    company="Studio Meridian"
-    companyHref="https://example.com"
-    description="에이전시에서 브랜드 사이트·랜딩 페이지를 다수 제작했습니다. 모션은 prefers-reduced-motion을 존중하고, LCP 개선을 위한 이미지·폰트 전략을 적용했습니다."
-    technologies={['HTML', 'SCSS', 'Vue 2', 'Nuxt', 'Contentful']}
-    relatedLinks={[
-      { href: 'https://example.com', label: 'Case study' },
-      { href: 'https://example.com', label: 'Agency reel' },
+    date="2023.10 — 2024.12"
+    company="그라비티"
+    title="웹서비스 개발그룹 · 팀원"
+    description={[
+      <>
+        <ExperienceDescLink href="">GRAVITY Official Site</ExperienceDescLink> 리뉴얼 퍼블리싱
+      </>,
+      <>
+        <ExperienceDescLink href="">2023 G-Star</ExperienceDescLink> 퍼블리싱 구축
+      </>,
+      '게임 별 오피셜 사이트 운영 및 이벤트, 렌딩 페이지 구축 및 유지보수',
+      '네오사이언 퍼즐앤드래곤, 라그나로크 이벤트 특별형 페이지 퍼블리싱',
+      <>
+        <ExperienceDescLink href="https://www.gnjoy.com/">GNJOY</ExperienceDescLink> 퍼블리싱 운영
+      </>,
     ]}
+    technologies={['Javascript', 'jQuery', 'SCSS', 'Swider.js', 'AOS', 'GSAP', 'HTML']}
   />
   <ExperienceItem
-    date="2018 — 2019"
-    title="Junior Web Developer"
-    company="Pixel & Co"
-    description="마크업·스타일 가이드 정리, 소규모 인터랙션 구현, 크로스 브라우저 QA를 담당했습니다."
-    technologies={['JavaScript', 'jQuery', 'PHP']}
+    date="2022.01 — 2023.08"
+    company="브이스퀘어"
+    title="UI/UX팀 · 대리/팀원"
+    description={[
+      'SCSS기반의 브이스퀘어 System Kit Guide 및 기본 템플릿(DEMO) 단독 구축 및 프로젝트 반영',
+      '대학 및 LMS(Polaris), CMS(Pluto), SSO(Pyxis) 솔루션 교육 사이트 페이지 프로젝트 별 퍼블리싱 구축 및 운영',
+    ]}
+    technologies={['Javascript', 'jQuery', 'SCSS', 'Swider.js', 'AOS', 'HTML']}
+  />
+  <ExperienceItem
+    date="2020.10 — 2021.05"
+    company="아이스크림에듀"
+    title="사이트서비스기획팀 웹개발파트 · 주임/팀원"
+    description={[
+      '초등, 중등 홈런 홈페이지 반응형 퍼블리싱 및 운영',
+      'SEO(검색엔진최적화)를 위한 기존 페이지 리뉴얼 퍼블리싱',
+      '네이버 서치어드바이저를 통한 초등 홈런 사이트 진단 및 개선',
+    ]}
+    technologies={['Javascript', 'jQuery', 'Swider.js', 'AOS', 'CSS', 'HTML']}
+  />
+  <ExperienceItem
+    date="2018.06 — 2020.06"
+    company="메쎼이상"
+    title="정보전략실 솔루션팀 · 주임/팀원"
+    description={[
+      '코리아베이비페어 어플리케이션 하이브리드 앱 반응형 퍼블리싱 및 운영',
+      '케이펫 어플리케이션 하이브리드 앱 반응형 퍼블리싱',
+      'WordPress 기반의 전시 사이트 페이지 수정 퍼블리싱',
+      'FMS 페이지((전시 관리 시스템)) 퍼블리싱',
+      '구글, 카카오, 네이버 등 광고 스크립트 작업',
+      'AWS S3 css, image, javascript 파일 업로드 및 Jenkins 빌드 관리',
+    ]}
+    technologies={['WordPress', 'AWS S3', 'Javascript', 'jQuery', 'Swider.js', 'CSS', 'HTML']}
+  />
+  <ExperienceItem
+    date="2017.01 — 2018.01"
+    company="가온엔아이티"
+    title="전략기획팀 · 사원/팀원"
+    description={[
+      '웹 사이트 및 공공기관(GIS 및 도로, 미술관, 원자력발전소 등) 관리자 페이지 전반적인 퍼블리싱 구축 및 웹 디자인 보조',
+    ]}
+    technologies={['Javascript', 'jQuery', 'bxSlider', 'Swider.js', 'CSS', 'HTML']}
   />
 </ExperienceList>
-
-<div className="mt-12">
-  <a
-    href="#"
-    className="group/link inline-flex items-baseline text-base font-semibold leading-tight text-heading"
-    target="_blank"
-    rel="noreferrer noopener"
-  >
-    <span>
-      전체 이력서 보기
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        className="ml-1 inline-block h-4 w-4 shrink-0 translate-y-px transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none"
-        aria-hidden
-      >
-        <path
-          fillRule="evenodd"
-          d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-          clipRule="evenodd"
-        />
-      </svg>
-    </span>
-  </a>
-</div>
