@@ -1,42 +1,31 @@
 import type { ReactNode } from 'react';
 
-import { ExternalLinkIcon } from './ExternalLinkIcon';
-
 const hoverPanel =
   'absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/[0.06] lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg';
 
 export type ExperienceItemProps = {
   date: string;
-  title: string;
+  position: string;
   company: string;
-  companyHref?: string;
   description: ReactNode[];
   technologies: string[];
   relatedLinks?: { href: string; label: string }[];
-  subTitles?: string[];
+  subpositions?: string[];
 };
 
 export const ExperienceItem = ({
   date,
-  title,
+  position,
   company,
-  companyHref,
   description,
   technologies,
   relatedLinks,
-  subTitles,
+  subpositions,
 }: ExperienceItemProps) => {
   const headingBody = (
     <>
-      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
-      <span>
-        {title}
-        {' · '}
-        <span className="inline-block">
-          {company}
-          {companyHref ? <ExternalLinkIcon /> : null}
-        </span>
-      </span>
+      <span className="text-heading text-xl font-medium leading-loose">{company}</span>
+      <span className="inline-block ml-1 text-sm">{position}</span>
     </>
   );
 
@@ -45,32 +34,21 @@ export const ExperienceItem = ({
       <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
         <div className={hoverPanel} />
         <header
-          className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted sm:col-span-2"
+          className="z-10 mb-2 mt-1 text-sm font-semibold uppercase tracking-wide text-muted sm:col-span-2"
           aria-label={date}
         >
           {date}
         </header>
         <div className="z-10 sm:col-span-6">
-          <h3 className="font-medium leading-snug text-heading">
-            {companyHref ? (
-              <a
-                href={companyHref}
-                className="group/link relative inline-flex items-baseline text-base font-medium leading-tight text-heading"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                {headingBody}
-              </a>
-            ) : (
-              <div className="relative inline-flex items-baseline text-base font-medium leading-tight text-heading">{headingBody}</div>
-            )}
+          <h3 className="font-medium leading-snug">
+            <div className="relative">{headingBody}</div>
           </h3>
-          {subTitles?.map((line) => (
+          {subpositions?.map((line) => (
             <div key={line} className="text-muted" aria-hidden>
               {line}
             </div>
           ))}
-          <ul className="mt-2 list-disc space-y-1 pl-4 text-sm leading-normal">
+          <ul className="mt-2 list-disc space-y-1 pl-4 text-heading text-base leading-normal">
             {description.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
