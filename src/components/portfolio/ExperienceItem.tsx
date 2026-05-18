@@ -31,15 +31,15 @@ export const ExperienceItem = ({
 
   return (
     <li className="mb-12">
-      <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+      <div className="group relative grid pb-1 transition-all sm:grid-cols-12 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
         <div className={hoverPanel} />
         <header
-          className="z-10 mb-2 mt-1 text-sm font-semibold uppercase tracking-wide text-muted sm:col-span-2"
+          className="z-10 mb-2 mt-1 whitespace-nowrap text-sm font-semibold uppercase tracking-wide text-muted sm:col-span-4"
           aria-label={date}
         >
           {date}
         </header>
-        <div className="z-10 sm:col-span-6">
+        <div className="z-10 sm:col-span-8">
           <h3 className="font-medium leading-snug">
             <div className="relative">{headingBody}</div>
           </h3>
