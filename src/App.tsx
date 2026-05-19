@@ -97,7 +97,7 @@ function App() {
       <div className="relative z-40 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
         <div className="lg:flex lg:justify-between lg:gap-4 max-w-screen-xl">
           <Header activePage={activePage} onNavigate={onNavigate} />
-          <main className="min-w-0 pt-24 lg:w-[52%] lg:py-24">
+          <main className="min-w-0 pt-24 lg:w-[54%] lg:py-24">
             <Content />
             <p className="mt-16 max-w-lg text-sm leading-relaxed text-muted">
               <span className="text-heading">Figma</span>에서 대략적인 디자인 구상을 마친 뒤,
