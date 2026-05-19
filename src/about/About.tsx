@@ -6,7 +6,7 @@ const About = () => {
       </div>
       <div>
         <p className="mb-4 font-medium text-heading text-lg">
-          사용자 경험의 경계를 넓히는 <span className="text-accent">웹 퍼블리셔, 최진슬</span> 입니다.
+          사용자 경험의 경계를 넓히는 <span className="text-accent">UI/UX Developer 최진슬</span> 입니다.
         </p>
         <p className="mb-4">
           단순한 화면 구현을 넘어, <span className="font-medium text-heading">시멘틱 마크업과 WAI-ARIA</span>
