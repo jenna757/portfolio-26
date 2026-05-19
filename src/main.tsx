@@ -1,6 +1,7 @@
 import { StrictMode, useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
+import ScrollControls from './components/ScrollControls.tsx';
 import WorksPage from './works/WorksPage.tsx';
 import { isWorksPagePath } from './routes.ts';
 import { initTheme } from './theme.ts';
@@ -16,11 +17,12 @@ function Root() {
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
 
-  if (isWorksPagePath(pathname)) {
-    return <WorksPage />;
-  }
-
-  return <App />;
+  return (
+    <>
+      <ScrollControls />
+      {isWorksPagePath(pathname) ? <WorksPage /> : <App />}
+    </>
+  );
 }
 
 const rootEl = document.getElementById('root');
