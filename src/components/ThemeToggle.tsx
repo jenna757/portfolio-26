@@ -8,7 +8,7 @@ const ThemeToggle = () => {
     <button
       type="button"
       onClick={toggleTheme}
-      className="rounded-md p-2 text-muted transition-colors hover:text-heading focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      className="inline-flex text-muted transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
       aria-label={isDark ? '라이트 모드로 전환' : '다크 모드로 전환'}
       title={isDark ? '라이트 모드' : '다크 모드'}
     >
