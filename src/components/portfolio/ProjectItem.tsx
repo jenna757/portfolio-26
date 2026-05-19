@@ -62,7 +62,7 @@ export const ProjectItem = ({
               </span>
             </a>
           </h3>
-          <ul className="mt-2 list-disc space-y-1 pl-4 text-heading text-base leading-normal">
+          <ul className="mt-2 list-disc space-y-1 pl-4 text-heading text-sm leading-normal">
             {description.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
