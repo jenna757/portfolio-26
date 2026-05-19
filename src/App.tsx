@@ -100,14 +100,15 @@ function App() {
           <main className="min-w-0 pt-24 lg:w-[52%] lg:py-24">
             <Content />
             <p className="mt-16 max-w-lg text-sm leading-relaxed text-muted">
-              <span className="text-heading">Figma</span>에서 대략적인 디자인 구상을 하고,{' '}
-              <span className="text-heading">Visual Studio Code</span>에서 직접 코딩을 하며
+              <span className="text-heading">Figma</span>에서 대략적인 디자인 구상을 마친 뒤,{' '}
+              <span className="text-heading">Vite</span>를 사용해{' '}
+              <span className="text-heading">React(TypeScript)</span> 기반의 환경을 구축했습니다.
               <br />
-              막힌 부분은 <span className="text-heading">Cursor</span>의 도움을 받아 코딩을 했습니다.
+              이를 바탕으로 <span className="text-heading">Cursor</span>의 프롬프트를 활용해 포트폴리오를 제작했습니다.{' '}
               <br />
-              스타일은 <span className="text-heading">Tailwind(v4.0)</span>로 하였고,{' '}
-              <span className="text-heading">Vite</span>를 사용하여 빌드하고{' '}
-              <span className="text-heading">Vercel</span>로 배포했습니다.
+              스타일은 <span className="text-heading">Tailwind CSS (v4.0)</span>을 적용했으며,{' '}
+              <span className="text-heading">Vite</span>로 빌드 후 <span className="text-heading">Vercel</span>을 통해
+              배포를 완료 했습니다.
               <br />
               모든 텍스트는 Interop 서체를 사용했습니다.
             </p>
