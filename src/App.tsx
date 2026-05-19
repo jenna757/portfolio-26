@@ -100,7 +100,8 @@ function App() {
           <main className="min-w-0 pt-24 lg:w-[52%] lg:py-24">
             <Content />
             <p className="mt-16 max-w-lg text-sm leading-relaxed text-muted">
-              <span className="text-heading">Figma</span>에서 대략적인 디자인 구상을 마친 뒤,{' '}
+              <span className="text-heading">Figma</span>에서 대략적인 디자인 구상을 마친 뒤,
+              <br />
               <span className="text-heading">Vite</span>를 사용해{' '}
               <span className="text-heading">React(TypeScript)</span> 기반의 환경을 구축했습니다.
               <br />
