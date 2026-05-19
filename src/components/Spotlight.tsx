@@ -1,12 +1,13 @@
 import { useEffect, useRef } from 'react';
 
 /**
- * brittanychiang.com 과 동일한 스포트라이트: 600px 원형 radial-gradient,
+ * 600px 원형 radial-gradient,
  * 중심은 마우스(client → 레이어 로컬 좌표), 색은 rgba(29, 78, 216, 0.15) → transparent 80%
- * @see https://brittanychiang.com/
  */
 function spotlightColor() {
-  return getComputedStyle(document.documentElement).getPropertyValue('--color-spotlight').trim() || 'rgb(29 78 216 / 0.15)';
+  return (
+    getComputedStyle(document.documentElement).getPropertyValue('--color-spotlight').trim() || 'rgb(29 78 216 / 0.15)'
+  );
 }
 
 function setSpotlightBackground(el: HTMLElement, clientX: number, clientY: number) {

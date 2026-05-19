@@ -1,6 +1,7 @@
 @import './fonts/interop.css';
 @import 'tailwindcss';
 
+/* Tailwind CSS 스타일 커스텀 */
 @theme {
   --font-sans: 'Interop', ui-sans-serif, system-ui, sans-serif;
   --color-navy-deep: #020c1b;

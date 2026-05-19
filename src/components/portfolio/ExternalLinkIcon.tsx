@@ -1,4 +1,3 @@
-/** brittanychiang.com 제목 링크 옆 화살표 아이콘 */
 export const ExternalLinkIcon = ({ className = 'h-4 w-4' }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
