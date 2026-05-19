@@ -4,7 +4,7 @@ const About = () => {
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-navy/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
         <h2 className="text-sm font-bold uppercase tracking-widest text-heading lg:sr-only">About</h2>
       </div>
-      <div>
+      <div className="leading-snug">
         <p className="mb-4 font-medium text-heading text-lg">
           사용자 경험의 경계를 넓히는 <span className="text-accent">UI/UX Developer 최진슬</span> 입니다.
         </p>
@@ -22,7 +22,7 @@ const About = () => {
             디자인 시스템을 제로베이스에서 구축하여 컴포넌트 라이브러리의 퍼블리싱 고도화와 운영을 전담
           </span>
           {''}
-          하며 시스템의 효율성을 증명하고 있습니다.
+          하고 있습니다.
         </p>
         <p className="mb-4">
           이전에는{' '}
