@@ -59,7 +59,7 @@ const Header = ({ activePage, onNavigate }: HeaderProps) => {
             </li>
           ))}
         </ul>
-        <p className="text-xs text-muted/70">© {new Date().getFullYear()}</p>
+        <p className="text-xs text-muted/70">© {new Date().getFullYear()}. 최진슬 All rights reserved.</p>
       </div>
     </header>
   );
