@@ -1,4 +1,4 @@
-import WorksMdx from '../content/works.mdx';
+import SummaryMdx from '../content/summary.mdx';
 
 const Works = () => {
   return (
@@ -11,7 +11,20 @@ const Works = () => {
         <h2 className="text-sm font-bold uppercase tracking-widest text-heading lg:sr-only">Works</h2>
       </div>
       <div>
-        <WorksMdx />
+        <SummaryMdx />
+        <p className="mt-10">
+          <a
+            href="/works"
+            className="group inline-flex items-center gap-2 text-sm font-medium text-accent transition-colors hover:text-accent/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            <span
+              className="h-px w-8 bg-accent transition-all group-hover:w-12 motion-reduce:transition-none"
+              aria-hidden
+            />
+            리스트 더보기
+            <span aria-hidden>→</span>
+          </a>
+        </p>
       </div>
     </section>
   );
