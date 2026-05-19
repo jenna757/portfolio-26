@@ -3,11 +3,11 @@ import type { ReactNode } from 'react';
 import { ExternalLinkIcon } from './ExternalLinkIcon';
 
 const hoverPanel =
-  'absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-white/[0.06] lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg';
+  'absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-surface-hover lg:group-hover:shadow-[inset_0_1px_0_0_var(--color-border-subtle)] lg:group-hover:drop-shadow-lg';
 
 /** 썸네일 가로 비율은 8열 그리드 col-span(3·5)으로 결정됩니다. */
 const thumbCellClass =
-  'z-10 aspect-video w-full rounded border-2 border-white/10 object-cover transition group-hover:border-white/25 sm:order-1 sm:col-span-3 sm:translate-y-1';
+  'z-10 aspect-video w-full rounded border-2 border-border-subtle object-cover transition group-hover:border-border-subtle-hover sm:order-1 sm:col-span-3 sm:translate-y-1';
 const contentCellClass = 'z-10 sm:order-2 sm:col-span-5';
 
 export type ProjectItemProps = {

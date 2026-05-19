@@ -1,4 +1,5 @@
 import Spotlight from '../components/Spotlight';
+import ThemeToggle from '../components/ThemeToggle';
 import WorksMdx from '../content/works.mdx';
 
 const WorksPage = () => {
@@ -7,6 +8,9 @@ const WorksPage = () => {
       <Spotlight />
       <div className="relative z-40 mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16">
         <header className="mb-12 border-b border-navy-panel/80 pb-8 md:mb-16">
+          <div className="mb-6 flex justify-end">
+            <ThemeToggle />
+          </div>
           <a
             href="/#works"
             className="group mb-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted transition-colors hover:text-heading focus-visible:text-heading"

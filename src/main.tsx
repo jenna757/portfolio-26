@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import WorksPage from './works/WorksPage.tsx';
 import { isWorksPagePath } from './routes.ts';
+import { initTheme } from './theme.ts';
+
+initTheme();
 
 function Root() {
   const [pathname, setPathname] = useState(() => window.location.pathname);

@@ -1,4 +1,5 @@
 import Menu from './Menu';
+import ThemeToggle from './components/ThemeToggle';
 import type { Page } from './nav';
 
 const socialLinks = [
@@ -44,21 +45,24 @@ const Header = ({ activePage, onNavigate }: HeaderProps) => {
       </div>
       <Menu activePage={activePage} onNavigate={onNavigate} />
       <div className="mt-8 lg:mt-0">
-        <ul className="mb-6 flex items-center gap-3.5" aria-label="외부 링크">
-          {socialLinks.map(({ href, label, icon }) => (
-            <li key={label}>
-              <a
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-muted transition-colors hover:text-accent focus-visible:text-accent"
-              >
-                <span className="sr-only">{label}</span>
-                {icon}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="mb-6 flex items-center gap-3.5">
+          <ThemeToggle />
+          <ul className="flex items-center gap-3.5" aria-label="외부 링크">
+            {socialLinks.map(({ href, label, icon }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-muted transition-colors hover:text-accent focus-visible:text-accent"
+                >
+                  <span className="sr-only">{label}</span>
+                  {icon}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
         <p className="text-xs text-muted/70">© {new Date().getFullYear()}. 최진슬 All rights reserved.</p>
       </div>
     </header>
