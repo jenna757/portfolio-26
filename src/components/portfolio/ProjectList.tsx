@@ -14,7 +14,7 @@ type ProjectListProps = {
 
 export const ProjectList = ({ children, columns = 1 }: ProjectListProps) => (
   <ProjectListContext.Provider value={columns}>
-    <ul className={columns === 2 ? 'group/list grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2' : 'group/list'}>
+    <ul className={columns === 2 ? 'group/list grid grid-cols-1 gap-x-10 gap-y-12 sm:grid-cols-2' : 'group/list'}>
       {children}
     </ul>
   </ProjectListContext.Provider>

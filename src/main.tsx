@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import ScrollControls from './components/ScrollControls.tsx';
 import WorksPage from './works/WorksPage.tsx';
-import { isWorksPagePath } from './routes.ts';
+import TheRoPage from './works/projects/the-ro/TheRoPage.tsx';
+import { getWorkProjectSlug, isWorksPagePath } from './routes.ts';
 import { initTheme } from './theme.ts';
 
 initTheme();
@@ -20,7 +21,13 @@ function Root() {
   return (
     <>
       <ScrollControls />
-      {isWorksPagePath(pathname) ? <WorksPage /> : <App />}
+      {getWorkProjectSlug(pathname) === 'the-ro' ? (
+        <TheRoPage />
+      ) : isWorksPagePath(pathname) ? (
+        <WorksPage />
+      ) : (
+        <App />
+      )}
     </>
   );
 }

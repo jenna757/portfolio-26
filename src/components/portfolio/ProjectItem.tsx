@@ -6,17 +6,17 @@ import { useProjectListColumns } from './ProjectList';
 const hoverPanel =
   'absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-surface-hover lg:group-hover:shadow-[inset_0_1px_0_0_var(--color-border-subtle)] lg:group-hover:drop-shadow-lg';
 
-/** 썸네일 가로 비율은 8열 그리드 col-span(3·5)으로 결정됩니다. */
+/** 썸네일: 1열 목록 sm+ col-span(3·5), 2열 목록(Works 전체) 세로 배치·전체 너비·높이 16:9의 70%. */
 const thumbCellClass =
   'z-10 aspect-video w-full rounded border-2 border-border-subtle object-cover transition group-hover:border-border-subtle-hover sm:order-1 sm:col-span-3 sm:translate-y-1';
 const thumbCellClassGrid =
-  'z-10 order-1 aspect-video w-full rounded border-2 border-border-subtle object-cover transition group-hover:border-border-subtle-hover';
+  'z-10 order-1 aspect-[16/6.3] w-full rounded border-2 border-border-subtle object-cover transition group-hover:border-border-subtle-hover';
 const contentCellClass = 'z-10 sm:order-2 sm:col-span-5';
 const contentCellClassGrid = 'z-10 order-2';
 
 export type ProjectItemProps = {
   title: string;
-  titleHref: string;
+  titleHref?: string;
   description: ReactNode[];
   technologies?: string[];
   imageSrc?: string;
@@ -36,6 +36,9 @@ export const ProjectItem = ({
   const isTwoColumn = useProjectListColumns() === 2;
   const thumbClass = isTwoColumn ? thumbCellClassGrid : thumbCellClass;
   const contentClass = isTwoColumn ? contentCellClassGrid : contentCellClass;
+  const titleHrefTrimmed = titleHref?.trim();
+  const hasTitleLink = Boolean(titleHrefTrimmed);
+  const isExternalTitleLink = hasTitleLink && /^https?:\/\//i.test(titleHrefTrimmed!);
 
   return (
     <li className={isTwoColumn ? undefined : 'mb-12'}>
@@ -49,18 +52,23 @@ export const ProjectItem = ({
         <div className={hoverPanel} />
         <div className={contentClass}>
           <h3 className="font-medium leading-snug">
-            <a
-              href={titleHref}
-              className="group/link relative inline-flex items-baseline text-heading text-lg font-medium leading-loose"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
-              <span>
-                {title}
-                <ExternalLinkIcon />
-              </span>
-            </a>
+            {hasTitleLink ? (
+              <a
+                href={titleHrefTrimmed}
+                className="group/link relative inline-flex items-baseline text-heading text-lg font-medium leading-loose hover:text-accent focus-visible:text-accent"
+                {...(isExternalTitleLink
+                  ? { target: '_blank', rel: 'noreferrer noopener' }
+                  : undefined)}
+              >
+                <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block" />
+                <span>
+                  {title}
+                  {isExternalTitleLink ? <ExternalLinkIcon /> : null}
+                </span>
+              </a>
+            ) : (
+              <span className="break-keep wrap-anywhere text-heading text-lg font-medium leading-loose">{title}</span>
+            )}
           </h3>
           <ul className="mt-2 list-disc space-y-1 pl-4 text-heading text-sm leading-normal">
             {description.map((item, index) => (
