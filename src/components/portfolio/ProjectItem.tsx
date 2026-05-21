@@ -14,9 +14,12 @@ const thumbCellClassGrid =
 const contentCellClass = 'z-10 sm:order-2 sm:col-span-5';
 const contentCellClassGrid = 'z-10 order-2';
 
+/** `public/works/pdf/` 에 두는 파일은 `/works/pdf/파일명.pdf` 형태로 지정 */
 export type ProjectItemProps = {
   title: string;
   titleHref?: string;
+  pdfHref?: string;
+  pdfLabel?: string;
   description: ReactNode[];
   technologies?: string[];
   imageSrc?: string;
@@ -24,9 +27,13 @@ export type ProjectItemProps = {
   children?: ReactNode;
 };
 
+const defaultPdfLabel = '상세 보기 (PDF)';
+
 export const ProjectItem = ({
   title,
   titleHref,
+  pdfHref,
+  pdfLabel = defaultPdfLabel,
   description,
   technologies,
   imageSrc,
@@ -39,6 +46,8 @@ export const ProjectItem = ({
   const titleHrefTrimmed = titleHref?.trim();
   const hasTitleLink = Boolean(titleHrefTrimmed);
   const isExternalTitleLink = hasTitleLink && /^https?:\/\//i.test(titleHrefTrimmed!);
+  const pdfHrefTrimmed = pdfHref?.trim();
+  const hasPdfLink = Boolean(pdfHrefTrimmed);
 
   return (
     <li className={isTwoColumn ? undefined : 'mb-12'}>
@@ -85,6 +94,19 @@ export const ProjectItem = ({
                 </li>
               ))}
             </ul>
+          ) : null}
+          {hasPdfLink ? (
+            <p className="mt-3">
+              <a
+                href={pdfHrefTrimmed}
+                className="group/pdf relative inline-flex items-baseline text-sm font-medium text-accent hover:text-accent/90 focus-visible:text-accent/90"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {pdfLabel}
+                <ExternalLinkIcon className="h-3.5 w-3.5" />
+              </a>
+            </p>
           ) : null}
           {children}
         </div>

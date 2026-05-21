@@ -4,6 +4,11 @@ import theroThumb from '../assets/img/gravity/the_ro/page.webp';
 <p className="mb-8 text-base font-bold leading-normal text-muted">프로젝트</p>
 
 <ProjectList columns={2}>
+  {/*
+    PDF 연결 예시 (파일을 public/works/pdf/ 에 추가한 뒤 주석 해제):
+    pdfHref="/works/pdf/skyds.pdf"
+    pdfLabel="상세 보기 (PDF)"  // 생략 시 기본 문구
+  */}
   <ProjectItem
     title="SkyDS(Sky Design System) — 대한항공"
     description={[
